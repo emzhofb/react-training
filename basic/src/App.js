@@ -35,13 +35,13 @@ const Abouts = ({ match }) => (
     <h2>My Name</h2>
     <ul>
       <li>
-        <Link to={`${match.url}/ikhda`}>Ikhda</Link>
+        <Link to={`${match.url}/ikhda`}>first name</Link>
       </li>
       <li>
-        <Link to={`${match.url}/muhammad`}>Muhammad</Link>
+        <Link to={`${match.url}/muhammad`}>second name</Link>
       </li>
       <li>
-        <Link to={`${match.url}/wildani`}>Wildani</Link>
+        <Link to={`${match.url}/wildani`}>last name</Link>
       </li>
     </ul>
 
