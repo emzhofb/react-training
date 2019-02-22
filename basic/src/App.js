@@ -48,11 +48,18 @@ const Abouts = ({ match }) => (
     {/* <Route path={`${match.url}/ikhda`} component={Ikhda} />
     <Route path={`${match.url}/muhammad`} component={Muhammad} />
     <Route path={`${match.url}/wildani`} component={Wildani} /> */}
+    <Route path={`${match.url}/:nameId`} component={About} />
     <Route
       exact
       path={match.url}
       render={() => <h3>Please select a name.</h3>}
     />
+  </div>
+);
+
+const About = ({ match }) => (
+  <div>
+    <h3>{match.params.nameId}</h3>
   </div>
 );
 
